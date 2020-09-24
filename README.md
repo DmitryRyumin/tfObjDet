@@ -46,7 +46,7 @@ import sys  # Доступ к некоторым переменным и фун�
 args = sys.argv  # Список аргументов командной строки
 
 directory = args[1]  # Директория с proto файлами
-protoc_path = args[2]  # Полный путь к файлу protoc
+protoc_path = args[2]  # Полный путь к protoc файлу
 
 # Проход по всем файлам в указанной деректории
 for file in os.listdir(directory):
@@ -54,4 +54,12 @@ for file in os.listdir(directory):
     if file.endswith('.proto'):
         # Конвертация proto файла
         os.system(protoc_path + ' ' + directory + '/' + file + ' --python_out=.')
+```
+
+**7. Выполнить `use_protobuf.py` файл**
+
+```shell script
+# models/research/object_detection/protos - путь к директории с proto файлами
+# models/research/protoc - путь к protoc файлу
+python use_protobuf.py models/research/object_detection/protos models/research/protoc
 ```
