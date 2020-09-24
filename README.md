@@ -24,3 +24,36 @@ git clone https://github.com/tensorflow/models.git
 ```
 
 **3. Удалить все из папки `models` кроме `research`**
+
+**4. Скачать [Protocol Buffers](https://github.com/protocolbuffers/protobuf/tags)**
+
+**5. Переместить файл `bin/protoc` в `research`**
+
+**6. В папке `research` создать файл `use_protobuf.py`**
+
+```python
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+Конвертация proto файлов
+"""
+
+# ######################################################################################################################
+# Импорт необходимых инструментов
+# ######################################################################################################################
+import os  # Взаимодействие с файловой системой
+import sys  # Доступ к некоторым переменным и функциям Python
+
+args = sys.argv  # Список аргументов командной строки
+
+directory = args[1]  # Директория с proto файлами
+protoc_path = args[2]  # Полный путь к файлу protoc
+
+# Проход по всем файлам в указанной деректории
+for file in os.listdir(directory):
+    # Файл с расширением proto
+    if file.endswith('.proto'):
+        # Конвертация proto файла
+        os.system(protoc_path + ' ' + directory + '/' + file + ' --python_out=.')
+```
