@@ -7,12 +7,6 @@
 
 **1. Установить `Cuda 10.1` с `cuDNN v7.6.5`**
 
->  **Windows**
-
-```shell script
-pip install tensorflow-gpu
-```
-
 **2. Установить TensorFlow**
 
 >  **Windows**
