@@ -5,11 +5,7 @@
 
 ## Установка
 
----
-
-**Установить `Git`**
-
----
+1. Установить `Git`
 
 >  **Windows**
 
@@ -21,10 +17,10 @@
 brew install git
 ```
 
-2. `Клонировать основную ветку репозитория Tensorflow Models`
+2. Клонировать основную ветку репозитория `Tensorflow Models`
 
 ```shell script
 git clone https://github.com/tensorflow/models.git
 ```
 
-3. `Удалить все из папки models кроме research`
+3. Удалить все из папки `models` кроме `research`
