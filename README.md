@@ -5,7 +5,29 @@
 
 ## Установка
 
-**1. Установить `Git`**
+**1. Установить `Cuda 10.1` с `cuDNN v7.6.5`**
+
+>  **Windows**
+
+```shell script
+pip install tensorflow-gpu
+```
+
+**2. Установить TensorFlow**
+
+>  **Windows**
+
+```shell script
+pip install tensorflow-gpu
+```
+
+>  **MacOS**
+
+```shell script
+pip install tensorflow
+```
+
+**3. Установить `Git`**
 
 >  **Windows**
 
@@ -17,19 +39,19 @@
 brew install git
 ```
 
-**2. Клонировать основную ветку репозитория `Tensorflow Models`**
+**4. Клонировать основную ветку репозитория `Tensorflow Models`**
 
 ```shell script
 git clone https://github.com/tensorflow/models.git
 ```
 
-**3. Удалить все из папки `models` кроме `research`**
+**5. Удалить все из папки `models` кроме `research`**
 
-**4. Скачать [Protocol Buffers](https://github.com/protocolbuffers/protobuf/tags)**
+**6. Скачать [Protocol Buffers](https://github.com/protocolbuffers/protobuf/tags)**
 
-**5. Переместить файл `bin/protoc` в `research`**
+**7. Переместить файл `bin/protoc` в `research`**
 
-**6. В папке `research` создать файл `use_protobuf.py`**
+**8. В папке `research` создать файл `use_protobuf.py`**
 
 ```python
 #!/usr/bin/env python
@@ -56,7 +78,7 @@ for file in os.listdir(directory):
         os.system(protoc_path + ' ' + directory + '/' + file + ' --python_out=.')
 ```
 
-**7. Перейти в директорию `models/research` и выполнить `use_protobuf.py` файл**
+**9. Перейти в директорию `models/research` и выполнить `use_protobuf.py` файл**
 
 ```shell script
 cd models/research
@@ -66,4 +88,18 @@ cd models/research
 python use_protobuf.py object_detection/protos protoc
 ```
 
-> **Примечание!** В директории `models/research/object_detection/protos` должны быть созданы `*.py` файлы
+> **Примечание!** В директории `models/research/object_detection/protos` должны быть созданы `*.py`
+
+**10. Скопировать установочный файл из `models/research/object_detection/packages/tf2` в `models/research`**
+
+**11. Выполнить установку `Tensorflow Models`**
+
+```shell script
+python -m pip install .
+```
+
+**12. Протестировать установку `Tensorflow Models`**
+
+```shell script
+python object_detection/builders/model_builder_tf2_test.py
+```
