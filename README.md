@@ -96,4 +96,9 @@ python -m pip install .
 
 ```shell script
 python object_detection/builders/model_builder_tf2_test.py
+
+# Результат:
+#
+# Ran 20 tests in 33.222s
+# OK (skipped=1)
 ```
