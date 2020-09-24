@@ -56,10 +56,14 @@ for file in os.listdir(directory):
         os.system(protoc_path + ' ' + directory + '/' + file + ' --python_out=.')
 ```
 
-**7. Выполнить `use_protobuf.py` файл**
+**7. Перейти в директорию `models/research` и выполнить `use_protobuf.py` файл**
 
 ```shell script
+cd models/research
+
 # models/research/object_detection/protos - путь к директории с proto файлами
 # models/research/protoc - путь к protoc файлу
-python use_protobuf.py models/research/object_detection/protos models/research/protoc
+python use_protobuf.py object_detection/protos protoc
 ```
+
+> **Примечание!** В директории `models/research/object_detection/protos` должны быть созданы `*.py` файлы
