@@ -3,19 +3,13 @@
 | [TensorFlow 1.x](https://github.com/DmitryRyumin/tfObjDet/tree/master/tf1) | [TensorFlow 2.x](https://github.com/DmitryRyumin/tfObjDet/tree/master/tf2) |
 | --- | --- |
 
-<div class="flash flash-success">
-  Установка
-</div>
+## Установка
 
 >  **Windows**
 
-<div class="bg-blue-light mb-2">
-    Установить или обновить Git
-</div>
+<h4 align="center">Установить Git</h4>
 
 [Скачать и установить необходимый дистрибутив](https://git-scm.com/)
-
----
 
 >  **MacOS**
 
