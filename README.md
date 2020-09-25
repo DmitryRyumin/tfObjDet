@@ -3,6 +3,8 @@
 | [TensorFlow 1.x](https://github.com/DmitryRyumin/tfObjDet/tree/master/tf1) | [TensorFlow 2.x](https://github.com/DmitryRyumin/tfObjDet/tree/master/tf2) |
 | --- | --- |
 
+<h4 align="center"><span style="color:#EC256F;">Полезные ресурсы</span></h4>
+
 <h4 align="center"><span style="color:#EC256F;">Установка (24.09.2020)</span></h4>
 
 1. Установить `Cuda 10.1` с `cuDNN v7.6.5` (**Примечание!** Только для `Windows` + `GPU`)

@@ -72,6 +72,7 @@ MANIFEST
 node_modules/
 models/
 models_2020_09_06/
+!/Users/dl/GitHub/TfObjDet/models_2020_09_06/research/object_detection/colab_tutorials/object_detection_tutorial.ipynb
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
