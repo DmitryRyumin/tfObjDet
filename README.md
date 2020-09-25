@@ -49,9 +49,9 @@
 
 6. Скачать [Protocol Buffers](https://github.com/protocolbuffers/protobuf/tags)
 
-7. Переместить файл `bin/protoc` в `research`
+7. Переместить файл `bin/protoc` в `models/research`
 
-8. В папке `research` создать файл `use_protobuf.py`
+8. В папке `models/research` создать файл `use_protobuf.py`
 
     > Python code
     >
