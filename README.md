@@ -12,7 +12,7 @@
 2. Установить TensorFlow
 
     >  **Windows**
-
+    >
     > CMD
     >
     > ```shell script
@@ -20,7 +20,7 @@
     > ```
 
     >  **MacOS**
-
+    >
     > CMD
     >
     > ```shell script
