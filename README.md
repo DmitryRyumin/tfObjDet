@@ -5,6 +5,8 @@
 
 <h4 align="center"><span style="color:#EC256F;">Полезные ресурсы</span></h4>
 
+- [Тестовый блокнот с обнаружениями объектов](https://github.com/DmitryRyumin/tfObjDet/tree/master/useful_resources/object_detection_tutorial.ipynb)
+
 <h4 align="center"><span style="color:#EC256F;">Установка (24.09.2020)</span></h4>
 
 1. Установить `Cuda 10.1` с `cuDNN v7.6.5` (**Примечание!** Только для `Windows` + `GPU`)
