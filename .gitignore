@@ -72,6 +72,8 @@ MANIFEST
 node_modules/
 models/
 models_2020_09_06/
+tf1/data/
+data/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
