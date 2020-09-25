@@ -30,7 +30,7 @@
     [Скачать и установить необходимый дистрибутив](https://git-scm.com/)
 
     >  **MacOS**
-
+    >
     > CMD
     >
     > ```shell script
@@ -80,33 +80,39 @@
     >         os.system(protoc_path + ' ' + directory + '/' + file + ' --python_out=.')
     > ```
 
-**9. Перейти в директорию `models/research` и выполнить `use_protobuf.py` файл**
+9. Перейти в директорию `models/research` и выполнить `use_protobuf.py` файл
 
-```shell script
-cd models/research
+    > CMD
+    >
+    > ```shell script
+    > cd models/research
+    > 
+    > # models/research/object_detection/protos - путь к директории с proto файлами
+    > # models/research/protoc - путь к protoc файлу
+    > python use_protobuf.py object_detection/protos protoc
+    > ```
+    >
+    > **Примечание!** В директории `models/research/object_detection/protos` должны быть созданы `*.py`
 
-# models/research/object_detection/protos - путь к директории с proto файлами
-# models/research/protoc - путь к protoc файлу
-python use_protobuf.py object_detection/protos protoc
-```
+10. Скопировать установочный файл из `models/research/object_detection/packages/tf2` в `models/research`
 
-> **Примечание!** В директории `models/research/object_detection/protos` должны быть созданы `*.py`
+11. Выполнить установку `Tensorflow Models`
 
-**10. Скопировать установочный файл из `models/research/object_detection/packages/tf2` в `models/research`**
+    > CMD
+    >
+    > ```shell script
+    > python -m pip install .
+    > ```
 
-**11. Выполнить установку `Tensorflow Models`**
+12. Протестировать установку `Tensorflow Models`
 
-```shell script
-python -m pip install .
-```
-
-**12. Протестировать установку `Tensorflow Models`**
-
-```shell script
-python object_detection/builders/model_builder_tf2_test.py
-
-# Результат:
-#
-# Ran 20 tests in 33.222s
-# OK (skipped=1)
-```
+    > CMD
+    >
+    > ```shell script
+    > python object_detection/builders/model_builder_tf2_test.py
+    >
+    > # Результат:
+    > #
+    > # Ran 20 tests in 33.222s
+    > # OK (skipped=1)
+    > ```
