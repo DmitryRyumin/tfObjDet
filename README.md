@@ -5,9 +5,7 @@
 
 <h4 align="center"><span style="color:#EC256F;">Установка (24.09.2020)</span></h4>
 
-1. Установить `Cuda 10.1` с `cuDNN v7.6.5`
-
-    > **Примечание!** Только для `Windows` + `GPU`
+1. Установить `Cuda 10.1` с `cuDNN v7.6.5` (**Примечание!** Только для `Windows` + `GPU`)
 
 2. Установить TensorFlow
 
@@ -27,9 +25,7 @@
     > pip install tensorflow
     > ```
 
-3. Установить `Git`
-
-    >  **Windows**
+3. Установить `Git` (**Примечание!** Только для `Windows`)
 
 [Скачать и установить необходимый дистрибутив](https://git-scm.com/)
 
