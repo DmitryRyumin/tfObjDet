@@ -7,11 +7,11 @@
 
 1. Установить `Cuda 10.1` с `cuDNN v7.6.5`
 
-> **Примечание!** Только для `Windows` + `GPU`
+    > **Примечание!** Только для `Windows` + `GPU`
 
 2. Установить TensorFlow
 
->  **Windows**
+    >  **Windows**
 
     > CMD
     >
@@ -19,7 +19,7 @@
     > pip install tensorflow-gpu
     > ```
 
->  **MacOS**
+    >  **MacOS**
 
     > CMD
     >
@@ -29,11 +29,11 @@
 
 3. Установить `Git`
 
->  **Windows**
+    >  **Windows**
 
 [Скачать и установить необходимый дистрибутив](https://git-scm.com/)
 
->  **MacOS**
+    >  **MacOS**
 
     > CMD
     >
